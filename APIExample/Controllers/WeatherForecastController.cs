@@ -1,4 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Authorization;
+using APIScan.Models;
+using APIScan.Security;
 
 namespace APIScan.Controllers
 {
@@ -6,18 +9,21 @@ namespace APIScan.Controllers
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
     {
+        private readonly JwtAuthenticationManager _jwtAuthenticationManager;
+        public WeatherForecastController(JwtAuthenticationManager jwtAuthenticationManager)
+        {
+            this._jwtAuthenticationManager = jwtAuthenticationManager;
+        } 
+
         private static readonly string[] Summaries = new[]
         {
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
+                
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
-        {
-            _logger = logger;
-        }
-
+        [Authorize]
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
@@ -29,5 +35,19 @@ namespace APIScan.Controllers
             })
             .ToArray();
         }
+
+        [AllowAnonymous]
+        [HttpPost("Authorize")]
+        public IActionResult AuthUser([FromBody] User user)
+        {
+            var token = _jwtAuthenticationManager.Authenticate(user.username, user.password);
+            if (token == null)
+            {
+                return Unauthorized();
+            }
+            return Ok(token);
+        }
     }
+
+  
 }

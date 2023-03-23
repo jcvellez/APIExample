@@ -5,8 +5,14 @@ C:\HOME\APIScan\APIExample\bin\Debug\net6.0\APIScan.deps.json
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\APIScan.runtimeconfig.json
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\APIScan.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\APIScan.pdb
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.AspNetCore.JsonPatch.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Microsoft.OpenApi.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Newtonsoft.Json.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Newtonsoft.Json.Bson.dll
@@ -14,6 +20,8 @@ C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Npgsql.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\HOME\APIScan\APIExample\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\HOME\APIScan\APIExample\bin\Debug\net6.0\System.Security.Permissions.dll
 C:\HOME\APIScan\APIExample\obj\Debug\net6.0\APIScan.csproj.AssemblyReference.cache
 C:\HOME\APIScan\APIExample\obj\Debug\net6.0\APIScan.GeneratedMSBuildEditorConfig.editorconfig
 C:\HOME\APIScan\APIExample\obj\Debug\net6.0\APIScan.AssemblyInfoInputs.cache

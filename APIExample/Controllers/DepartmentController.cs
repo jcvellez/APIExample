@@ -1,4 +1,5 @@
 ﻿using APIScan.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Npgsql;
 using System.Data;
@@ -14,7 +15,7 @@ namespace APIScan.Controllers
         {
             _configuration = configuration;
         }
-
+           
         [HttpGet]
         public JsonResult Get()
         {

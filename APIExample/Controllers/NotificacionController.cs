@@ -1,4 +1,5 @@
 ﻿using APIScan.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Npgsql;
@@ -16,6 +17,7 @@ namespace APIScan.Controllers
             _configuration = configuration;
         }
 
+        [Authorize]
         [HttpGet]
         public JsonResult Get()
         {
@@ -44,6 +46,7 @@ namespace APIScan.Controllers
             return new JsonResult(table);
         }
 
+        [Authorize]
         [HttpPost]
         public JsonResult Post(Notificacion not)
         {
@@ -72,6 +75,7 @@ namespace APIScan.Controllers
             return new JsonResult("Ok Add");
         }
 
+        [Authorize]
         [HttpPut]
         public JsonResult Put(Notificacion not)
         {
@@ -101,6 +105,7 @@ namespace APIScan.Controllers
             return new JsonResult("Ok Update");
         }
 
+        [Authorize]
         [HttpDelete("{id}")]
         public JsonResult Delete(int id)
         {

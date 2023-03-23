@@ -1,0 +1,16 @@
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\APIScan.exe
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\appsettings.Development.json
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\appsettings.json
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\APIScan.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\APIScan.deps.json
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\APIScan.runtimeconfig.json
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\APIScan.pdb
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.JsonPatch.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Newtonsoft.Json.Bson.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Npgsql.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\HOME\APIScan\APIExample\obj\Release\net6.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
