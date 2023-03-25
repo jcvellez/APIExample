@@ -8,6 +8,17 @@ using APIScan.Security;
 
 var builder = WebApplication.CreateBuilder(args);
 
+static IHostBuilder CreteHostBuilder(string[] args) =>
+    Host.CreateDefaultBuilder(args)
+        .ConfigureWebHostDefaults(webBuilder =>
+        {
+            webBuilder.UseUrls("http://0.0.0.0:5000");
+            webBuilder.UseStartup<Program>();
+        });
+
+    
+
+
 // Add services to the container.
 
 builder.Services.AddControllers();
