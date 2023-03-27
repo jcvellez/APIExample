@@ -12,7 +12,7 @@ static IHostBuilder CreteHostBuilder(string[] args) =>
     Host.CreateDefaultBuilder(args)
         .ConfigureWebHostDefaults(webBuilder =>
         {
-            webBuilder.UseUrls("http://0.0.0.0:5000");
+            webBuilder.UseUrls("http://0.0.0.0:8080");
             webBuilder.UseStartup<Program>();
         });
 
@@ -61,8 +61,8 @@ options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoop
 builder.Services.Configure<ForwardedHeadersOptions>(options =>
 {
     options.ForwardedHeaders = ForwardedHeaders.XForwardedFor | ForwardedHeaders.XForwardedProto;
-
     options.KnownProxies.Add(IPAddress.Parse("89.117.59.131"));
+    options.KnownProxies.Add(IPAddress.Parse("10.0.0.100"));
 });
 
 var app = builder.Build();
